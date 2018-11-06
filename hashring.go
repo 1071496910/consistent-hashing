@@ -74,7 +74,6 @@ func (hr *hashRing) AddNode(addr string) error {
 			}
 
 		}
-		fmt.Printf("DEBUG: hash %v to %v\n", vname, slotN)
 	}
 	hr.addedNode[addr] = 0
 	return nil
