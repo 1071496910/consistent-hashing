@@ -9,7 +9,7 @@ import (
 type HashRing interface {
 	AddNode(addr string) error
 	DelNode(addr string) error
-	GetNode(key string) error
+	GetNode(key string) (string,error)
 }
 
 type virtualNode struct {
